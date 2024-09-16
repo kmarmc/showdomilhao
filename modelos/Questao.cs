@@ -23,6 +23,11 @@ namespace Questao
     public void Desenhar ()
     {
         labelPergunta.Text=Pergunta;
+        BtResposta01.Text=Resposta1;
+        BtResposta02.Text=Resposta2;
+        BtResposta03.Text=Resposta3;
+        BtResposta04.Text=Resposta4;
+        BtResposta05.Text=Resposta5;
     }
     public Questao( Label LP, Button Botao01, Button Botao02, Button Botao03, Button Botao04, Button Botao05 )
     {
@@ -32,6 +37,41 @@ namespace Questao
     BtResposta03=Botao03;
     BtResposta04=Botao04;
     BtResposta05=Botao05;        
+    }
+    public void ConfigurarEstruturaDeDesenho( Label LP, Button Botao01, Button Botao02, Button Botao03, Button Botao04, Button Botao05 )
+    {
+    labelPergunta=LP;
+    BtResposta01=Botao01;
+    BtResposta02=Botao02;
+    BtResposta03=Botao03;
+    BtResposta04=Botao04;
+    BtResposta05=Botao05;        
+    }
+    public bool VerificarResposta(int RespostaResolvida)
+    {
+    if (RespostaResolvida==RespostaCorreta)
+    {
+        var Botao = QualBotao (RespostaResolvida)
+            Botao BackgroundColor = BackgroundColor.Green;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    private Button QualBotao (int RespostaResolvida)
+    {
+        if (RespostaResolvida==1)
+          return BtResposta01
+        else if (RespostaResolvida==2)
+          return  BtResposta02
+        else if (RespostaResolvida==3)
+          return BtResposta03
+        else if (RespostaResolvida==4)
+          return BtResposta04
+        else if (RespostaResolvida==5)
+          return BtResposta05
+    } 
     }
     }
 }
