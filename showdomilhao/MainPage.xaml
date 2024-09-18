@@ -33,7 +33,7 @@
       <Frame  x:Name="FrameQuestoes"
                 HeightRequest="110"
                 BorderColor="Black"
-                BackgroundColor="#fff9e8"
+                BackgroundColor="#c0d8fa"
                 CornerRadius="20"
                 Grid.Row="1"
                 Grid.Column="0"
@@ -45,8 +45,8 @@
      </Frame>
 
         <Button x:Name="BtResposta01"
-                BackgroundColor="#e0bc5e"
-                Margin="10,10,10,20"
+                BackgroundColor="#8208d4"
+                Margin="10,0"
                 Padding="0"
                 HeightRequest="50"
                 BorderColor="Black"
@@ -58,8 +58,8 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="BtResposta02"
-                BackgroundColor="#e0bc5e"
-                Margin="10,10,10,20"
+                BackgroundColor="#8208d4"
+                Margin="10,0"
                 Padding="0"
                 HeightRequest="50"
                 BorderColor="White"
@@ -71,7 +71,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="BtResposta03"
-                BackgroundColor="#e0bc5e"
+                BackgroundColor="#8208d4"
                 Margin="10,0"
                 Padding="0"
                 HeightRequest="50"
@@ -84,7 +84,7 @@
                 Grid.ColumnSpan="3"/>
         
         <Button x:Name="BtResposta04"
-                BackgroundColor="#e0bc5e"
+                BackgroundColor="#8208d4"
                 HeightRequest="50"
                 Margin="10,0"
                 Padding="0"
@@ -97,7 +97,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="BtResposta05"
-                BackgroundColor="#e0bc5e"
+                BackgroundColor="#8208d4"
                 Margin="10,0"
                 Padding="0"
                 HeightRequest="50"
@@ -112,30 +112,30 @@
         <Button x:Name="Ajuda01"
                 Margin="10"
                 Text="Cartas"
-                BackgroundColor="#e0bc5e"
-                BorderColor="White"
+                BackgroundColor="#c0d8fa"
+                BorderColor="Black"
                 BorderWidth="2"
-                TextColor="White"
+                TextColor="Black"
                 Grid.Row="7"
                 Grid.Column="0"/>
 
         <Button x:Name="Ajuda02"
                 Margin="10"
                 Text="Eliminar 1"
-                BackgroundColor="#e0bc5e"
+                BackgroundColor="#c0d8fa"
                 BorderWidth="2"
-                BorderColor="White"
-                TextColor="White"
+                BorderColor="Black"
+                TextColor="Black"
                 Grid.Row="7"
                 Grid.Column="1"/>
 
         <Button x:Name="Ajuda03"
                 Margin="10"
                 Text="Universitários"
-                BackgroundColor="#e0bc5e"
+                BackgroundColor="#c0d8fa"
                 BorderWidth="2"
-                BorderColor="White"
-                TextColor="White"
+                BorderColor="Black"
+                TextColor="Black"
                 Grid.Row="7"
                 Grid.Column="2"/>
 
