@@ -11,8 +11,7 @@ public class Gerenciador
 
     public Gerenciador (Label LP, Button BtResposta01, Button BtResposta02, Button BtResposta03, Button BtResposta04, Button BtResposta05, Label LabelPontuacao, Label labelNivel)
     {
-        Label LabelPontuacao;
-        Label LabelNivel;
+        
         CriaPergunta(LP, BtResposta01, BtResposta02, BtResposta03, BtResposta04, BtResposta05); 
     }
     void CriaPergunta (Label LP, Button BtResposta01, Button BtResposta02, Button BtResposta03, Button BtResposta04, Button BtResposta05)
@@ -45,7 +44,7 @@ public class Gerenciador
     }
     public async void VerificaResposta(int RespostaResolvida)
     {
-        if (QuestaoCorrente.VerificaResposta(RespostaResolvida))
+        if (QuestaoCorrente.VerificarResposta(RespostaResolvida))
         {
             await Task.Delay(1000);
             AdicionaPontuacao(NivelAtual);
