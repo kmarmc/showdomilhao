@@ -148,7 +148,7 @@
 
         <Button x:Name="Ajuda01"
                 Margin="10"
-                Text="Cartas"
+                Text="Eliminar 3"
                 BackgroundColor="#c0d8fa"
                 BorderColor="Black"
                 BorderWidth="2"
