@@ -1,10 +1,10 @@
-namespace showdomilhao;
+namespace showdomilhao;Questao
 public class Gerenciador 
 {
     public int Pontuacao { get; private set; }
     int NivelAtual = 1;
-    List <Questao> ListaQuestoes = new List <Questao> ();
-    List<int> ListaQuestoesResolvidas = new List <int> ();
+    List <Questao> ListaTodasQuestoes = new List <Questao> ();
+    List<Questao> ListaTodasQuestoesResolvidas = new List <Questao> ();
     Questao QuestaoCorrente;
     Label LabelPontuacao;
     Label LabelNivel;
@@ -27,7 +27,7 @@ Q1.Resposta3 = "vermelho"; // C
 Q1.Resposta4 = "rosa"; // D
 Q1.Resposta5 = "lilas"; // E
 Q1.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q1);
+ListaTodasQuestoes.Add(Q1);
 
 var Q2 = new Questao();
 Q2.Nivel = 1;
@@ -39,7 +39,7 @@ Q2.Resposta3 = "Pedro Álvares Cabral"; // C
 Q2.Resposta4 = "Américo Vespúcio"; // D
 Q2.Resposta5 = "Bartolomeu Dias"; // E
 Q2.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q2);
+ListaTodasQuestoes.Add(Q2);
 
 var Q3 = new Questao();
 Q3.Nivel = 1;
@@ -51,7 +51,7 @@ Q3.Resposta3 = "Paris"; // C
 Q3.Resposta4 = "Madrid"; // D
 Q3.Resposta5 = "Roma"; // E
 Q3.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q3);
+ListaTodasQuestoes.Add(Q3);
 
 var Q4 = new Questao();
 Q4.Nivel = 1;
@@ -63,7 +63,7 @@ Q4.Resposta3 = "Júpiter"; // C
 Q4.Resposta4 = "Saturno"; // D
 Q4.Resposta5 = "Netuno"; // E
 Q4.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q4);
+ListaTodasQuestoes.Add(Q4);
 
 var Q5 = new Questao();
 Q5.Nivel = 1;
@@ -75,7 +75,7 @@ Q5.Resposta3 = "Cavalo"; // C
 Q5.Resposta4 = "Falcão"; // D
 Q5.Resposta5 = "Tigre"; // E
 Q5.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q5);
+ListaTodasQuestoes.Add(Q5);
 
 var Q6 = new Questao();
 Q6.Nivel = 1;
@@ -87,7 +87,7 @@ Q6.Resposta3 = "Ásia"; // C
 Q6.Resposta4 = "África"; // D
 Q6.Resposta5 = "Oceania"; // E
 Q6.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q6);
+ListaTodasQuestoes.Add(Q6);
 
 var Q7 = new Questao();
 Q7.Nivel = 1;
@@ -99,7 +99,7 @@ Q7.Resposta3 = "Yen"; // C
 Q7.Resposta4 = "Real"; // D
 Q7.Resposta5 = "Peso"; // E
 Q7.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q7);
+ListaTodasQuestoes.Add(Q7);
 
 var Q8 = new Questao();
 Q8.Nivel = 1;
@@ -111,7 +111,7 @@ Q8.Resposta3 = "Óleo"; // C
 Q8.Resposta4 = "Álcool"; // D
 Q8.Resposta5 = "Mercúrio"; // E
 Q8.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q8);
+ListaTodasQuestoes.Add(Q8);
 
 var Q9 = new Questao();
 Q9.Nivel = 1;
@@ -123,7 +123,7 @@ Q9.Resposta3 = "Girafa"; // C
 Q9.Resposta4 = "Urso"; // D
 Q9.Resposta5 = "Tigre"; // E
 Q9.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q9);
+ListaTodasQuestoes.Add(Q9);
 
 var Q10 = new Questao();
 Q10.Nivel = 1;
@@ -135,7 +135,7 @@ Q10.Resposta3 = "Francês"; // C
 Q10.Resposta4 = "Português"; // D
 Q10.Resposta5 = "Italiano"; // E
 Q10.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q10);
+ListaTodasQuestoes.Add(Q10);
 
 var Q11 = new Questao();
 Q11.Nivel = 2;
@@ -147,7 +147,7 @@ Q11.Resposta3 = "Graciliano Ramos"; // C
 Q11.Resposta4 = "Clarice Lispector"; // D
 Q11.Resposta5 = "Érico Veríssimo"; // E
 Q11.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q11);
+ListaTodasQuestoes.Add(Q11);
 
 var Q12 = new Questao();
 Q12.Nivel = 2;
@@ -159,7 +159,7 @@ Q12.Resposta3 = "CaCl2"; // C
 Q12.Resposta4 = "MgCl2"; // D
 Q12.Resposta5 = "FeCl3"; // E
 Q12.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q12);
+ListaTodasQuestoes.Add(Q12);
 
 var Q13 = new Questao();
 Q13.Nivel = 2;
@@ -171,7 +171,7 @@ Q13.Resposta3 = "1500"; // C
 Q13.Resposta4 = "1930"; // D
 Q13.Resposta5 = "1750"; // E
 Q13.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q13);
+ListaTodasQuestoes.Add(Q13);
 
 var Q14 = new Questao();
 Q14.Nivel = 2;
@@ -183,7 +183,7 @@ Q14.Resposta3 = "Frankfurt"; // C
 Q14.Resposta4 = "Hamburgo"; // D
 Q14.Resposta5 = "Colônia"; // E
 Q14.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q14);
+ListaTodasQuestoes.Add(Q14);
 
 var Q15 = new Questao();
 Q15.Nivel = 2;
@@ -195,7 +195,7 @@ Q15.Resposta3 = "Fe"; // C
 Q15.Resposta4 = "Pb"; // D
 Q15.Resposta5 = "Cu"; // E
 Q15.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q15);
+ListaTodasQuestoes.Add(Q15);
 
 var Q16 = new Questao();
 Q16.Nivel = 2;
@@ -207,7 +207,7 @@ Q16.Resposta3 = "Madrid"; // C
 Q16.Resposta4 = "Valência"; // D
 Q16.Resposta5 = "Bilbao"; // E
 Q16.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q16);
+ListaTodasQuestoes.Add(Q16);
 
 var Q17 = new Questao();
 Q17.Nivel = 2;
@@ -219,7 +219,7 @@ Q17.Resposta3 = "Everest"; // C
 Q17.Resposta4 = "Makalu"; // D
 Q17.Resposta5 = "Aconcágua"; // E
 Q17.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q17);
+ListaTodasQuestoes.Add(Q17);
 
 var Q18 = new Questao();
 Q18.Nivel = 2;
@@ -231,7 +231,7 @@ Q18.Resposta3 = "Nitrogênio"; // C
 Q18.Resposta4 = "Metano"; // D
 Q18.Resposta5 = "Hélio"; // E
 Q18.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q18);
+ListaTodasQuestoes.Add(Q18);
 
 var Q19 = new Questao();
 Q19.Nivel = 2;
@@ -243,7 +243,7 @@ Q19.Resposta3 = "Pacífico"; // C
 Q19.Resposta4 = "Ártico"; // D
 Q19.Resposta5 = "Antártico"; // E
 Q19.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q19);
+ListaTodasQuestoes.Add(Q19);
 
 var Q20 = new Questao();
 Q20.Nivel = 2;
@@ -255,7 +255,7 @@ Q20.Resposta3 = "Alfabeto"; // C
 Q20.Resposta4 = "Silabário"; // D
 Q20.Resposta5 = "Rúnico"; // E
 Q20.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q20);
+ListaTodasQuestoes.Add(Q20);
 
 var Q21 = new Questao();
 Q21.Nivel = 3;
@@ -267,7 +267,7 @@ Q21.Resposta3 = "Veneza"; // C
 Q21.Resposta4 = "Nápoles"; // D
 Q21.Resposta5 = "Florença"; // E
 Q21.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q21);
+ListaTodasQuestoes.Add(Q21);
 
 var Q22 = new Questao();
 Q22.Nivel = 3;
@@ -279,7 +279,7 @@ Q22.Resposta3 = "Celsius"; // C
 Q22.Resposta4 = "Grama"; // D
 Q22.Resposta5 = "Joule"; // E
 Q22.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q22);
+ListaTodasQuestoes.Add(Q22);
 
 var Q23 = new Questao();
 Q23.Nivel = 3;
@@ -291,7 +291,7 @@ Q23.Resposta3 = "Brasília"; // C
 Q23.Resposta4 = "Salvador"; // D
 Q23.Resposta5 = "Belo Horizonte"; // E
 Q23.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q23);
+ListaTodasQuestoes.Add(Q23);
 
 var Q24 = new Questao();
 Q24.Nivel = 3;
@@ -303,7 +303,7 @@ Q24.Resposta3 = "Thomas Jefferson"; // C
 Q24.Resposta4 = "Franklin D. Roosevelt"; // D
 Q24.Resposta5 = "John Adams"; // E
 Q24.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q24);
+ListaTodasQuestoes.Add(Q24);
 
 var Q25 = new Questao();
 Q25.Nivel = 3;
@@ -315,7 +315,7 @@ Q25.Resposta3 = "Virgílio"; // C
 Q25.Resposta4 = "Cervantes"; // D
 Q25.Resposta5 = "Tolstói"; // E
 Q25.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q25);
+ListaTodasQuestoes.Add(Q25);
 
 var Q26 = new Questao();
 Q26.Nivel = 3;
@@ -327,7 +327,7 @@ Q26.Resposta3 = "Francês"; // C
 Q26.Resposta4 = "Português"; // D
 Q26.Resposta5 = "Italiano"; // E
 Q26.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q26);
+ListaTodasQuestoes.Add(Q26);
 
 var Q27 = new Questao();
 Q27.Nivel = 3;
@@ -339,7 +339,7 @@ Q27.Resposta3 = "São Paulo"; // C
 Q27.Resposta4 = "Cidade do México"; // D
 Q27.Resposta5 = "Pequim"; // E
 Q27.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q27);
+ListaTodasQuestoes.Add(Q27);
 
 var Q28 = new Questao();
 Q28.Nivel = 3;
@@ -351,7 +351,7 @@ Q28.Resposta3 = "América do Sul"; // C
 Q28.Resposta4 = "América do Norte"; // D
 Q28.Resposta5 = "Oceania"; // E
 Q28.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q28);
+ListaTodasQuestoes.Add(Q28);
 
 var Q29 = new Questao();
 Q29.Nivel = 3;
@@ -363,7 +363,7 @@ Q29.Resposta3 = "A Criação de Adão"; // C
 Q29.Resposta4 = "A Escola de Atenas"; // D
 Q29.Resposta5 = "Mona Lisa"; // E
 Q29.RespostaCorreta = 5; // E
-ListaQuestoes.Add(Q29);
+ListaTodasQuestoes.Add(Q29);
 
 var Q30 = new Questao();
 Q30.Nivel = 3;
@@ -375,7 +375,7 @@ Q30.Resposta3 = "China"; // C
 Q30.Resposta4 = "Indonésia"; // D
 Q30.Resposta5 = "Paquistão"; // E
 Q30.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q30);
+ListaTodasQuestoes.Add(Q30);
 
 var Q31 = new Questao();
 Q31.Nivel = 4;
@@ -387,7 +387,7 @@ Q31.Resposta3 = "Inteligência Artificial"; // C
 Q31.Resposta4 = "Panspermia"; // D
 Q31.Resposta5 = "Mutacionismo"; // E
 Q31.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q31);
+ListaTodasQuestoes.Add(Q31);
 
 var Q32 = new Questao();
 Q32.Nivel = 4;
@@ -399,7 +399,7 @@ Q32.Resposta3 = "Cobre"; // C
 Q32.Resposta4 = "Cromo"; // D
 Q32.Resposta5 = "Cloro"; // E
 Q32.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q32);
+ListaTodasQuestoes.Add(Q32);
 
 var Q33 = new Questao();
 Q33.Nivel = 4;
@@ -411,7 +411,7 @@ Q33.Resposta3 = "Seul"; // C
 Q33.Resposta4 = "Bangcoc"; // D
 Q33.Resposta5 = "Hanoi"; // E
 Q33.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q33);
+ListaTodasQuestoes.Add(Q33);
 
 var Q34 = new Questao();
 Q34.Nivel = 4;
@@ -423,7 +423,7 @@ Q34.Resposta3 = "Europa"; // C
 Q34.Resposta4 = "América do Norte"; // D
 Q34.Resposta5 = "Oceania"; // E
 Q34.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q34);
+ListaTodasQuestoes.Add(Q34);
 
 var Q35 = new Questao();
 Q35.Nivel = 4;
@@ -435,7 +435,7 @@ Q35.Resposta3 = "Rafael"; // C
 Q35.Resposta4 = "Botticelli"; // D
 Q35.Resposta5 = "Donatello"; // E
 Q35.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q35);
+ListaTodasQuestoes.Add(Q35);
 
 var Q36 = new Questao();
 Q36.Nivel = 5;
@@ -447,7 +447,7 @@ Q36.Resposta3 = "Dólar"; // C
 Q36.Resposta4 = "Iene"; // D
 Q36.Resposta5 = "Euro"; // E
 Q36.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q36);
+ListaTodasQuestoes.Add(Q36);
 
 var Q37 = new Questao();
 Q37.Nivel = 5;
@@ -459,7 +459,7 @@ Q37.Resposta3 = "Ásia"; // C
 Q37.Resposta4 = "América do Norte"; // D
 Q37.Resposta5 = "Europa"; // E
 Q37.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q37);
+ListaTodasQuestoes.Add(Q37);
 
 var Q38 = new Questao();
 Q38.Nivel = 5;
@@ -471,7 +471,7 @@ Q38.Resposta3 = "Kazan"; // C
 Q38.Resposta4 = "Novosibirsk"; // D
 Q38.Resposta5 = "Vladivostok"; // E
 Q38.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q38);
+ListaTodasQuestoes.Add(Q38);
 
 var Q39 = new Questao();
 Q39.Nivel = 5;
@@ -483,7 +483,7 @@ Q39.Resposta3 = "Koala"; // C
 Q39.Resposta4 = "Dingo"; // D
 Q39.Resposta5 = "Crocodilo"; // E
 Q39.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q39);
+ListaTodasQuestoes.Add(Q39);
 
 var Q40 = new Questao();
 Q40.Nivel = 5;
@@ -495,7 +495,7 @@ Q40.Resposta3 = "Floresta Tropical"; // C
 Q40.Resposta4 = "Floresta Boreal"; // D
 Q40.Resposta5 = "Floresta de Redwood"; // E
 Q40.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q40);
+ListaTodasQuestoes.Add(Q40);
 var Q41 = new Questao();
 Q41.Nivel = 6;
 Q41.ConfigurarDesenho(LP, BtResposta01, BtResposta02, BtResposta03, BtResposta04, BtResposta05);
@@ -506,7 +506,7 @@ Q41.Resposta3 = "Jorge Luis Borges"; // C
 Q41.Resposta4 = "Fernando Pessoa"; // D
 Q41.Resposta5 = "Machado de Assis"; // E
 Q41.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q41);
+ListaTodasQuestoes.Add(Q41);
 
 var Q42 = new Questao();
 Q42.Nivel = 6;
@@ -518,7 +518,7 @@ Q42.Resposta3 = "Japão"; // C
 Q42.Resposta4 = "Filipinas"; // D
 Q42.Resposta5 = "Malásia"; // E
 Q42.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q42);
+ListaTodasQuestoes.Add(Q42);
 
 var Q43 = new Questao();
 Q43.Nivel = 6;
@@ -530,7 +530,7 @@ Q43.Resposta3 = "O2"; // C
 Q43.Resposta4 = "H2SO4"; // D
 Q43.Resposta5 = "CH4"; // E
 Q43.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q43);
+ListaTodasQuestoes.Add(Q43);
 
 var Q44 = new Questao();
 Q44.Nivel = 6;
@@ -542,7 +542,7 @@ Q44.Resposta3 = "Pacífico"; // C
 Q44.Resposta4 = "Ártico"; // D
 Q44.Resposta5 = "Antártico"; // E
 Q44.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q44);
+ListaTodasQuestoes.Add(Q44);
 
 var Q45 = new Questao();
 Q45.Nivel = 6;
@@ -554,7 +554,7 @@ Q45.Resposta3 = "Gamma"; // C
 Q45.Resposta4 = "Delta"; // D
 Q45.Resposta5 = "Épsilon"; // E
 Q45.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q45);
+ListaTodasQuestoes.Add(Q45);
 
 var Q46 = new Questao();
 Q46.Nivel = 7;
@@ -566,7 +566,7 @@ Q46.Resposta3 = "Veneza"; // C
 Q46.Resposta4 = "Florença"; // D
 Q46.Resposta5 = "Nápoles"; // E
 Q46.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q46);
+ListaTodasQuestoes.Add(Q46);
 
 var Q47 = new Questao();
 Q47.Nivel = 7;
@@ -578,7 +578,7 @@ Q47.Resposta3 = "Francês"; // C
 Q47.Resposta4 = "Português"; // D
 Q47.Resposta5 = "Italiano"; // E
 Q47.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q47);
+ListaTodasQuestoes.Add(Q47);
 
 var Q48 = new Questao();
 Q48.Nivel = 7;
@@ -590,7 +590,7 @@ Q48.Resposta3 = "Galileu Galilei"; // C
 Q48.Resposta4 = "Stephen Hawking"; // D
 Q48.Resposta5 = "Niels Bohr"; // E
 Q48.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q48);
+ListaTodasQuestoes.Add(Q48);
 
 var Q49 = new Questao();
 Q49.Nivel = 7;
@@ -602,7 +602,7 @@ Q49.Resposta3 = "Paris"; // C
 Q49.Resposta4 = "Lisboa"; // D
 Q49.Resposta5 = "Roma"; // E
 Q49.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q49);
+ListaTodasQuestoes.Add(Q49);
 
 var Q50 = new Questao();
 Q50.Nivel = 7;
@@ -614,7 +614,7 @@ Q50.Resposta3 = "Melbourne"; // C
 Q50.Resposta4 = "Brisbane"; // D
 Q50.Resposta5 = "Perth"; // E
 Q50.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q50);
+ListaTodasQuestoes.Add(Q50);
 
 var Q51 = new Questao();
 Q51.Nivel = 8;
@@ -626,7 +626,7 @@ Q51.Resposta3 = "Ásia"; // C
 Q51.Resposta4 = "Europa"; // D
 Q51.Resposta5 = "Oceania"; // E
 Q51.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q51);
+ListaTodasQuestoes.Add(Q51);
 
 var Q52 = new Questao();
 Q52.Nivel = 8;
@@ -638,7 +638,7 @@ Q52.Resposta3 = "Homero"; // C
 Q52.Resposta4 = "Shakespeare"; // D
 Q52.Resposta5 = "Goethe"; // E
 Q52.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q52);
+ListaTodasQuestoes.Add(Q52);
 
 var Q53 = new Questao();
 Q53.Nivel = 8;
@@ -650,7 +650,7 @@ Q53.Resposta3 = "Petróleo"; // C
 Q53.Resposta4 = "Gás natural"; // D
 Q53.Resposta5 = "Energia hidrelétrica"; // E
 Q53.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q53);
+ListaTodasQuestoes.Add(Q53);
 
 var Q54 = new Questao();
 Q54.Nivel = 8;
@@ -662,7 +662,7 @@ Q54.Resposta3 = "Sevilha"; // C
 Q54.Resposta4 = "Madri"; // D
 Q54.Resposta5 = "Bilbao"; // E
 Q54.RespostaCorreta = 4; // D
-ListaQuestoes.Add(Q54);
+ListaTodasQuestoes.Add(Q54);
 
 var Q55 = new Questao();
 Q55.Nivel = 8;
@@ -674,7 +674,7 @@ Q55.Resposta3 = "Mercúrio"; // C
 Q55.Resposta4 = "Vênus"; // D
 Q55.Resposta5 = "Saturno"; // E
 Q55.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q55);
+ListaTodasQuestoes.Add(Q55);
 
 var Q56 = new Questao();
 Q56.Nivel = 9;
@@ -686,7 +686,7 @@ Q56.Resposta3 = "Buzz Aldrin"; // C
 Q56.Resposta4 = "John Glenn"; // D
 Q56.Resposta5 = "Valentina Tereshkova"; // E
 Q56.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q56);
+ListaTodasQuestoes.Add(Q56);
 
 var Q57 = new Questao();
 Q57.Nivel = 9;
@@ -698,7 +698,7 @@ Q57.Resposta3 = "Patras"; // C
 Q57.Resposta4 = "Heraclion"; // D
 Q57.Resposta5 = "Corinto"; // E
 Q57.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q57);
+ListaTodasQuestoes.Add(Q57);
 
 var Q58 = new Questao();
 Q58.Nivel = 9;
@@ -710,7 +710,7 @@ Q58.Resposta3 = "Everest"; // C
 Q58.Resposta4 = "Lhotse"; // D
 Q58.Resposta5 = "Makalu"; // E
 Q58.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q58);
+ListaTodasQuestoes.Add(Q58);
 
 var Q59 = new Questao();
 Q59.Nivel = 9;
@@ -722,7 +722,7 @@ Q59.Resposta3 = "Alpes"; // C
 Q59.Resposta4 = "Rocosos"; // D
 Q59.Resposta5 = "Apalaches"; // E
 Q59.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q59);
+ListaTodasQuestoes.Add(Q59);
 
 var Q60 = new Questao();
 Q60.Nivel = 9;
@@ -734,7 +734,7 @@ Q60.Resposta3 = "Pequim"; // C
 Q60.Resposta4 = "Mumbai"; // D
 Q60.Resposta5 = "Seul"; // E
 Q60.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q60);
+ListaTodasQuestoes.Add(Q60);
 
 var Q61 = new Questao();
 Q61.Nivel = 10;
@@ -746,7 +746,7 @@ Q61.Resposta3 = "600.000 km/s"; // C
 Q61.Resposta4 = "1.000.000 km/s"; // D
 Q61.Resposta5 = "75.000 km/s"; // E
 Q61.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q61);
+ListaTodasQuestoes.Add(Q61);
 
 var Q62 = new Questao();
 Q62.Nivel = 10;
@@ -758,7 +758,7 @@ Q62.Resposta3 = "Tubarão Branco"; // C
 Q62.Resposta4 = "Girafa"; // D
 Q62.Resposta5 = "Orca"; // E
 Q62.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q62);
+ListaTodasQuestoes.Add(Q62);
 
 var Q63 = new Questao();
 Q63.Nivel = 10;
@@ -770,7 +770,7 @@ Q63.Resposta3 = "Teoria da Relatividade"; // C
 Q63.Resposta4 = "Teoria da Criação"; // D
 Q63.Resposta5 = "Teoria da Gravidade"; // E
 Q63.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q63);
+ListaTodasQuestoes.Add(Q63);
 
 var Q64 = new Questao();
 Q64.Nivel = 10;
@@ -782,7 +782,7 @@ Q64.Resposta3 = "América do Sul"; // C
 Q64.Resposta4 = "Oceania"; // D
 Q64.Resposta5 = "Antártida"; // E
 Q64.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q64);
+ListaTodasQuestoes.Add(Q64);
 
 var Q65 = new Questao();
 Q65.Nivel = 10;
@@ -794,7 +794,7 @@ Q65.Resposta3 = "Crosta"; // C
 Q65.Resposta4 = "Atmósfera"; // D
 Q65.Resposta5 = "Hidrosfera"; // E
 Q65.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q65);
+ListaTodasQuestoes.Add(Q65);
 var Q66 = new Questao();
 Q66.Nivel = 10;
 Q66.ConfigurarDesenho(LP, BtResposta01, BtResposta02, BtResposta03, BtResposta04, BtResposta05);
@@ -805,7 +805,7 @@ Q66.Resposta3 = "Fígado"; // C
 Q66.Resposta4 = "Rins"; // D
 Q66.Resposta5 = "Estômago"; // E
 Q66.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q66);
+ListaTodasQuestoes.Add(Q66);
 
 var Q67 = new Questao();
 Q67.Nivel = 10;
@@ -817,7 +817,7 @@ Q67.Resposta3 = "Cantão"; // C
 Q67.Resposta4 = "Hong Kong"; // D
 Q67.Resposta5 = "Macao"; // E
 Q67.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q67);
+ListaTodasQuestoes.Add(Q67);
 
 var Q68 = new Questao();
 Q68.Nivel = 10;
@@ -829,7 +829,7 @@ Q68.Resposta3 = "Vênus"; // C
 Q68.Resposta4 = "Júpiter"; // D
 Q68.Resposta5 = "Saturno"; // E
 Q68.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q68);
+ListaTodasQuestoes.Add(Q68);
 
 var Q69 = new Questao();
 Q69.Nivel = 10;
@@ -841,7 +841,7 @@ Q69.Resposta3 = "O Nascimento de Vênus"; // C
 Q69.Resposta4 = "A Criação de Adão"; // D
 Q69.Resposta5 = "O Grito"; // E
 Q69.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q69);
+ListaTodasQuestoes.Add(Q69);
 
 var Q70 = new Questao();
 Q70.Nivel = 10;
@@ -853,7 +853,7 @@ Q70.Resposta3 = "Hamburgo"; // C
 Q70.Resposta4 = "Frankfurt"; // D
 Q70.Resposta5 = "Colônia"; // E
 Q70.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q70);
+ListaTodasQuestoes.Add(Q70);
 
 var Q71 = new Questao();
 Q71.Nivel = 10;
@@ -865,7 +865,7 @@ Q71.Resposta3 = "Yangtze"; // C
 Q71.Resposta4 = "Mississippi"; // D
 Q71.Resposta5 = "Danúbio"; // E
 Q71.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q71);
+ListaTodasQuestoes.Add(Q71);
 
 var Q72 = new Questao();
 Q72.Nivel = 10;
@@ -877,7 +877,7 @@ Q72.Resposta3 = "O2"; // C
 Q72.Resposta4 = "H2O2"; // D
 Q72.Resposta5 = "NaCl"; // E
 Q72.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q72);
+ListaTodasQuestoes.Add(Q72);
 
 var Q73 = new Questao();
 Q73.Nivel = 10;
@@ -889,7 +889,7 @@ Q73.Resposta3 = "Fósforo"; // C
 Q73.Resposta4 = "Mercúrio"; // D
 Q73.Resposta5 = "Cobre"; // E
 Q73.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q73);
+ListaTodasQuestoes.Add(Q73);
 
 var Q74 = new Questao();
 Q74.Nivel = 10;
@@ -901,7 +901,7 @@ Q74.Resposta3 = "Dólar"; // C
 Q74.Resposta4 = "Euro"; // D
 Q74.Resposta5 = "Rupia"; // E
 Q74.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q74);
+ListaTodasQuestoes.Add(Q74);
 
 var Q75 = new Questao();
 Q75.Nivel = 10;
@@ -913,7 +913,7 @@ Q75.Resposta3 = "Mark Zuckerberg"; // C
 Q75.Resposta4 = "Larry Page"; // D
 Q75.Resposta5 = "Elon Musk"; // E
 Q75.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q75);
+ListaTodasQuestoes.Add(Q75);
 
 var Q76 = new Questao();
 Q76.Nivel = 10;
@@ -925,7 +925,7 @@ Q76.Resposta3 = "Amarela"; // C
 Q76.Resposta4 = "Verde"; // D
 Q76.Resposta5 = "Branca"; // E
 Q76.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q76);
+ListaTodasQuestoes.Add(Q76);
 
 var Q77 = new Questao();
 Q77.Nivel = 10;
@@ -937,7 +937,7 @@ Q77.Resposta3 = "Raphael"; // C
 Q77.Resposta4 = "Botticelli"; // D
 Q77.Resposta5 = "Caravaggio"; // E
 Q77.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q77);
+ListaTodasQuestoes.Add(Q77);
 
 var Q78 = new Questao();
 Q78.Nivel = 10;
@@ -949,7 +949,7 @@ Q78.Resposta3 = "Pacífico"; // C
 Q78.Resposta4 = "Ártico"; // D
 Q78.Resposta5 = "Antártico"; // E
 Q78.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q78);
+ListaTodasQuestoes.Add(Q78);
 
 var Q79 = new Questao();
 Q79.Nivel = 10;
@@ -961,7 +961,7 @@ Q79.Resposta3 = "Peixe"; // C
 Q79.Resposta4 = "Leite"; // D
 Q79.Resposta5 = "Leguminosas"; // E
 Q79.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q79);
+ListaTodasQuestoes.Add(Q79);
 
 // Nível 6
 var Q81 = new Questao();
@@ -974,7 +974,7 @@ Q81.Resposta3 = "América do Sul"; // C
 Q81.Resposta4 = "Europa"; // D
 Q81.Resposta5 = "Oceania"; // E
 Q81.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q81);
+ListaTodasQuestoes.Add(Q81);
 
 // Nível 7
 var Q82 = new Questao();
@@ -987,7 +987,7 @@ Q82.Resposta3 = "China"; // C
 Q82.Resposta4 = "Estados Unidos"; // D
 Q82.Resposta5 = "Brasil"; // E
 Q82.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q82);
+ListaTodasQuestoes.Add(Q82);
 
 // Nível 8
 var Q83 = new Questao();
@@ -1000,7 +1000,7 @@ Q83.Resposta3 = "Juscelino Kubitschek"; // C
 Q83.Resposta4 = "Fernando Henrique Cardoso"; // D
 Q83.Resposta5 = "Luiz Inácio Lula da Silva"; // E
 Q83.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q83);
+ListaTodasQuestoes.Add(Q83);
 
 // Nível 9
 var Q84 = new Questao();
@@ -1013,7 +1013,7 @@ Q84.Resposta3 = "Lúxor"; // C
 Q84.Resposta4 = "Giza"; // D
 Q84.Resposta5 = "Aswan"; // E
 Q84.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q84);
+ListaTodasQuestoes.Add(Q84);
 
 // Nível 10
 var Q85 = new Questao();
@@ -1026,7 +1026,7 @@ Q85.Resposta3 = "Dióxido de carbono"; // C
 Q85.Resposta4 = "Hélio"; // D
 Q85.Resposta5 = "Argônio"; // E
 Q85.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q85);
+ListaTodasQuestoes.Add(Q85);
 
 // Nível 6
 var Q86 = new Questao();
@@ -1039,7 +1039,7 @@ Q86.Resposta3 = "Melbourne"; // C
 Q86.Resposta4 = "Brisbane"; // D
 Q86.Resposta5 = "Perth"; // E
 Q86.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q86);
+ListaTodasQuestoes.Add(Q86);
 
 // Nível 7
 var Q87 = new Questao();
@@ -1052,7 +1052,7 @@ Q87.Resposta3 = "Deserto de Gobi"; // C
 Q87.Resposta4 = "Deserto de Kalahari"; // D
 Q87.Resposta5 = "Deserto de Atacama"; // E
 Q87.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q87);
+ListaTodasQuestoes.Add(Q87);
 
 // Nível 8
 var Q88 = new Questao();
@@ -1065,7 +1065,7 @@ Q88.Resposta3 = "Sputnik 1"; // C
 Q88.Resposta4 = "Explorer 1"; // D
 Q88.Resposta5 = "Hubble"; // E
 Q88.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q88);
+ListaTodasQuestoes.Add(Q88);
 
 // Nível 9
 var Q89 = new Questao();
@@ -1078,7 +1078,7 @@ Q89.Resposta3 = "Teoria da Evolução"; // C
 Q89.Resposta4 = "Teoria da Gravidade"; // D
 Q89.Resposta5 = "Teoria da Geração Espontânea"; // E
 Q89.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q89);
+ListaTodasQuestoes.Add(Q89);
 
 // Nível 10
 var Q90 = new Questao();
@@ -1091,7 +1091,7 @@ Q90.Resposta3 = "Libra"; // C
 Q90.Resposta4 = "Dólar"; // D
 Q90.Resposta5 = "Yen"; // E
 Q90.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q90);
+ListaTodasQuestoes.Add(Q90);
 
 // Nível 8
 var Q91 = new Questao();
@@ -1104,7 +1104,7 @@ Q91.Resposta3 = "Suécia"; // C
 Q91.Resposta4 = "Finlândia"; // D
 Q91.Resposta5 = "Reino Unido"; // E
 Q91.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q91);
+ListaTodasQuestoes.Add(Q91);
 
 // Nível 7
 var Q92 = new Questao();
@@ -1117,7 +1117,7 @@ Q92.Resposta3 = "Girafa"; // C
 Q92.Resposta4 = "Rinoceronte"; // D
 Q92.Resposta5 = "Baleia Azul"; // E
 Q92.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q92);
+ListaTodasQuestoes.Add(Q92);
 
 // Nível 6
 var Q93 = new Questao();
@@ -1130,7 +1130,7 @@ Q93.Resposta3 = "Português"; // C
 Q93.Resposta4 = "Francês"; // D
 Q93.Resposta5 = "Italiano"; // E
 Q93.RespostaCorreta = 3; // C
-ListaQuestoes.Add(Q93);
+ListaTodasQuestoes.Add(Q93);
 
 // Nível 5
 var Q94 = new Questao();
@@ -1143,7 +1143,7 @@ Q94.Resposta3 = "Argônio"; // C
 Q94.Resposta4 = "Carbono"; // D
 Q94.Resposta5 = "Nitrogênio"; // E
 Q94.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q94);
+ListaTodasQuestoes.Add(Q94);
 
 // Nível 4
 var Q95 = new Questao();
@@ -1156,7 +1156,7 @@ Q95.Resposta3 = "Berlim"; // C
 Q95.Resposta4 = "Madrid"; // D
 Q95.Resposta5 = "Roma"; // E
 Q95.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q95);
+ListaTodasQuestoes.Add(Q95);
 
 // Nível 3
 var Q96 = new Questao();
@@ -1169,7 +1169,7 @@ Q96.Resposta3 = "Rio de Janeiro"; // C
 Q96.Resposta4 = "Salvador"; // D
 Q96.Resposta5 = "Fortaleza"; // E
 Q96.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q96);
+ListaTodasQuestoes.Add(Q96);
 
 // Nível 2
 var Q97 = new Questao();
@@ -1182,7 +1182,7 @@ Q97.Resposta3 = "364"; // C
 Q97.Resposta4 = "365,25"; // D
 Q97.Resposta5 = "360"; // E
 Q97.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q97);
+ListaTodasQuestoes.Add(Q97);
 
 // Nível 1
 var Q98 = new Questao();
@@ -1195,7 +1195,7 @@ Q98.Resposta3 = "Amarelo"; // C
 Q98.Resposta4 = "Vermelho"; // D
 Q98.Resposta5 = "Preto"; // E
 Q98.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q98);
+ListaTodasQuestoes.Add(Q98);
 
 // Nível 2
 var Q99 = new Questao();
@@ -1208,7 +1208,7 @@ Q99.Resposta3 = "10"; // C
 Q99.Resposta4 = "12"; // D
 Q99.Resposta5 = "4"; // E
 Q99.RespostaCorreta = 2; // B
-ListaQuestoes.Add(Q99);
+ListaTodasQuestoes.Add(Q99);
 
 // Nível 3
 var Q100 = new Questao();
@@ -1221,9 +1221,23 @@ Q100.Resposta3 = "Florença"; // C
 Q100.Resposta4 = "Nápoles"; // D
 Q100.Resposta5 = "Turim"; // E
 Q100.RespostaCorreta = 1; // A
-ListaQuestoes.Add(Q100);
+ListaTodasQuestoes.Add(Q100);
 
         ProximaQuestao();
+    }
+    void ProximaQuestao()
+    {
+       var ListaTodasQuestoes = ListaTodasQuestoes.Where(d=>d.nivelpergunta==NivelAtual).ToList();
+       var NumRand = Random.Shared.Next(0, ListaTodasQuestoes.Count - 1);
+       var NovaQuestao = ListaTodasQuestoes[numRand];
+       while (ListaTodasQuestoesResolvidas.Contains(NovaQuestao))
+       {
+          NumRand = Random.Shared.Next(0, ListaTodasQuestoes.Count - 1);
+          NovaQuestao = ListaTodasQuestoes[NumRand];
+       }
+       ListaTodasQuestoes.Add(NovaQuestao);
+       QuestaoCorrente = NovaQuestao;
+       QuestaoCorrente.Desenhar();
     }
     public async void VerificaResposta(int RespostaResolvida)
     {
@@ -1247,12 +1261,12 @@ ListaQuestoes.Add(Q100);
     void ProximaQuestao()
     {
 
-        var numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
-        while (ListaQuestoesResolvidas.Contains(numAleat))
-            numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
+        var numAleat=Random.Shared.Next(0, ListaTodasQuestoes.Count);
+        while (ListaTodasQuestoesResolvidas.Contains(numAleat))
+            numAleat=Random.Shared.Next(0, ListaTodasQuestoes.Count);
 
-        ListaQuestoesResolvidas.Add(numAleat);
-        QuestaoCorrente=ListaQuestoes[numAleat];
+        ListaTodasQuestoesResolvidas.Add(numAleat);
+        QuestaoCorrente=ListaTodasQuestoes[numAleat];
         QuestaoCorrente.Desenhar();
     }
     void Inicializar()
