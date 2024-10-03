@@ -147,6 +147,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="Ajuda01"
+                Clicked="AjudaRetirar"
                 Margin="10"
                 Text="Eliminar 3"
                 BackgroundColor="#c0d8fa"
@@ -157,6 +158,7 @@
                 Grid.Column="0"/>
 
         <Button x:Name="Ajuda02"
+                Clicked="AjudaPular"
                 Margin="10"
                 Text="Eliminar 1"
                 BackgroundColor="#c0d8fa"

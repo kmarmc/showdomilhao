@@ -1,4 +1,6 @@
-﻿namespace showdomilhao;
+﻿using Microsoft.Maui.Animations;
+
+namespace showdomilhao;
 
 public partial class MainPage : ContentPage
 {
@@ -32,5 +34,18 @@ public partial class MainPage : ContentPage
 	{
 		gerenciador.VerificaResposta(5);
 	}
+
+  void AjudaRetirar (object s, EventArgs e)
+  {
+	var ajuda = new RetirarErrada();
+	ajuda.ConfigurarDesenho(BtResposta01, BtResposta02, BtResposta03, BtResposta04, BtResposta05);
+	ajuda.RealizarAjuda(gerenciador.GetQuestaoCorrente());
+	(s as Button).IsVisible = false;
+  }
+  void AjudaPular(object s, EventArgs e)
+  {
+	gerenciador.ProximaQuestao();
+	(s as Button).IsVisible = false;
+  }
 
 }
