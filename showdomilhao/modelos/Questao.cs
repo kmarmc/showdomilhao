@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace showdomilhao;
 
 public class Questao : IEquatable<Questao>
@@ -23,7 +25,8 @@ public Questao()
   
     public bool Equals ( Questao q )
     {
-      return this.Nivel == q.Nivel;
+      return this.Nivel == q.Nivel &&
+        this.Pergunta == q.Pergunta;
     }
 
     public void Desenhar()
