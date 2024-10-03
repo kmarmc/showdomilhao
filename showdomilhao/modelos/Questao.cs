@@ -48,6 +48,12 @@ public Questao()
       BtResposta04.TextColor = Colors.Black;
       BtResposta05.BackgroundColor = Colors.White;
       BtResposta05.TextColor = Colors.Black;
+      
+      BtResposta01.IsVisible = true;
+      BtResposta02.IsVisible = true;
+      BtResposta03.IsVisible = true;
+      BtResposta04.IsVisible = true;
+      BtResposta05.IsVisible = true;
 
     }
 
