@@ -160,7 +160,7 @@
         <Button x:Name="Ajuda02"
                 Clicked="AjudaPular"
                 Margin="10"
-                Text="Eliminar 1"
+                Text="Pular"
                 BackgroundColor="#c0d8fa"
                 BorderWidth="2"
                 BorderColor="Black"
@@ -169,6 +169,7 @@
                 Grid.Column="1"/>
 
         <Button x:Name="Ajuda03"
+                Clicked="AjudaUniversitarios"
                 Margin="10"
                 Text="Universitários"
                 BackgroundColor="#c0d8fa"

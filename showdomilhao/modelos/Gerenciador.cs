@@ -1230,7 +1230,7 @@ public class Gerenciador
     {
         var ListaQuestoes = ListaTodasQuestoes.Where(d => d.Nivel == NivelAtual).ToList();
         var NumRand = Random.Shared.Next(0, ListaQuestoes.Count - 1);
-        var NovaQuestao = ListaQuestoes[numRand];
+        var NovaQuestao = ListaQuestoes[NumRand];
         while (ListaTodasQuestoesResolvidas.Contains(NovaQuestao))
         {
             NumRand = Random.Shared.Next(0, ListaQuestoes.Count - 1);
@@ -1258,7 +1258,7 @@ public class Gerenciador
         {
             await Task.Delay(1000);
 
-            await App.Current.MainPage.DisplayAlert("Acabou", "Resposta Incorreta", "Certa Resposta");
+            await App.Current.MainPage.DisplayAlert("Acabou", "Voce errou seu Neandertal", "Vai embora");
             Inicializar();
         }
         LabelPontuacao.Text = "Pontuação:R$" + Pontuacao.ToString();
