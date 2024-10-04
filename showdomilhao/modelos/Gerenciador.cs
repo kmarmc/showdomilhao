@@ -1228,22 +1228,23 @@ public class Gerenciador
     }
     public void ProximaQuestao()
     {
-        var ListaTodasQuestoes = ListaTodasQuestoes.Where(d => d.nivelpergunta == NivelAtual).ToList();
-        var NumRand = Random.Shared.Next(0, ListaTodasQuestoes.Count - 1);
-        var NovaQuestao = ListaTodasQuestoes[numRand];
+        var ListaQuestoes = ListaTodasQuestoes.Where(d => d.Nivel == NivelAtual).ToList();
+        var NumRand = Random.Shared.Next(0, ListaQuestoes.Count - 1);
+        var NovaQuestao = ListaQuestoes[numRand];
         while (ListaTodasQuestoesResolvidas.Contains(NovaQuestao))
         {
-            NumRand = Random.Shared.Next(0, ListaTodasQuestoes.Count - 1);
-            NovaQuestao = ListaTodasQuestoes[NumRand];
+            NumRand = Random.Shared.Next(0, ListaQuestoes.Count - 1);
+            NovaQuestao = ListaQuestoes[NumRand];
         }
         ListaTodasQuestoesResolvidas.Add(NovaQuestao);
         QuestaoCorrente = NovaQuestao;
         QuestaoCorrente.Desenhar();
+    }
         public Questao GetQuestaoCorrente()
         {
             return QuestaoCorrente;
         }
-    }
+    
     public async void VerificaResposta(int RespostaResolvida)
     {
         if (QuestaoCorrente.VerificarResposta(RespostaResolvida))
