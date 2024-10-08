@@ -59,17 +59,13 @@ public partial class MainPage : ContentPage
 
 			if (pular == 0)
 			{ 
-				Ajuda02.Text = "Pular";
+				Ajuda02.Text = "+ 2 pulos";
 			}
 			if (pular == 1)
 			{ 
-				Ajuda02.Text = " + 2 Pulos";
-			}
-			if (pular == 2)
-			{ 
 				Ajuda02.Text = " + 1 Pulo";
 			}
-		pular++;
+			pular++;
 
 	} 
 
