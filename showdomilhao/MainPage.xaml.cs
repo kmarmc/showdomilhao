@@ -42,11 +42,37 @@ public partial class MainPage : ContentPage
 	ajuda.RealizarAjuda(gerenciador.GetQuestaoCorrente());
 	(s as Button).IsVisible = false;
   }
-  void AjudaPular(object s, EventArgs e)
-  {
-	gerenciador.ProximaQuestao();
-	(s as Button).IsVisible = false;
-  }
+  int pular =0;
+	void AjudaPular(object S, EventArgs e)
+	{
+			
+			if (pular == 2)
+			{
+			gerenciador.ProximaQuestao();
+			(S as Button).IsVisible=false;
+			}
+
+			else
+			{
+				gerenciador.ProximaQuestao();
+			}
+
+			if (pular == 0)
+			{ 
+				Ajuda02.Text = "Pular";
+			}
+			if (pular == 1)
+			{ 
+				Ajuda02.Text = " + 2 Pulos";
+			}
+			if (pular == 2)
+			{ 
+				Ajuda02.Text = " + 1 Pulo";
+			}
+		pular++;
+
+	} 
+
  void AjudaUniversitarios (object s, EventArgs e)
   {
 	var ajuda = new Universitario();
